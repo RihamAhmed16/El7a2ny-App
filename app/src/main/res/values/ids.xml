@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <item name="drawer_layout" type="id" tools:ignore="DuplicateDefinition"></item>
+    <item name="drawer_layout1" type="id" tools:ignore="DuplicateDefinition"></item>
+    <item name="map" type="id"></item>
+</resources>

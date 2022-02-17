@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:background="#F6FCFD">
+
+    <TextView
+        android:id="@+id/textdetails"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/txtborder"
+        android:fontFamily="@font/bungee"
+        android:gravity="center"
+
+        android:text="Choose from the list"
+        android:textColor="#3C1C1C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_help"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/borser"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="When In Danger .. Ask For Help"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textdetails"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="17dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/roun_border"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/txtreport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_help"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:fadeScrollbars="true"
+            app:cardBackgroundColor="#5FCDFF"
+            app:cardCornerRadius="@dimen/fab_margin">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottiehelp"
+                android:layout_width="130dp"
+                android:layout_height="113dp"
+                android:layout_gravity="center"
+                android:background="@drawable/cardview_border"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/helpme"
+
+                tools:ignore="MissingClass,MissingConstraints" />
+
+            <Button
+                android:id="@+id/btnhelp"
+                android:layout_width="155dp"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:background="@drawable/txtborder"
+                android:gravity="center"
+                android:onClick="Helping"
+                android:text="Helping"
+                android:textColor="#020202" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtreport"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/borser"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Help Report Any Abuse"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="391dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="17dp"
+        android:background="@drawable/roun_border"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtreport"
+        app:layout_constraintVertical_bias="0.846"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:fadeScrollbars="true"
+            app:cardBackgroundColor="#5FCDFF"
+            app:cardCornerRadius="@dimen/fab_margin">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieReport"
+                android:layout_width="130dp"
+                android:layout_height="113dp"
+                android:layout_gravity="center"
+                android:background="@drawable/cardview_border"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/report"
+                tools:ignore="MissingClass,MissingConstraints" />
+
+            <Button
+                android:id="@+id/btnReport"
+                android:layout_width="155dp"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:background="@drawable/txtborder"
+                android:gravity="center"
+                android:text="Reporting"
+                android:onClick="Reporting"
+                android:textColor="#020202" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

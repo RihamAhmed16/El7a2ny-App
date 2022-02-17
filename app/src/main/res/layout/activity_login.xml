@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roun_border"
+    android:orientation="vertical"
+    android:textAlignment="viewStart"
+    android:textDirection="anyRtl"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/Image_help"
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="83dp"
+        android:contentDescription="@string/todo"
+        android:transitionName="img_logo"
+        app:layout_constraintBottom_toTopOf="@+id/txtuser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/photo"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Informations About User"
+        android:textColor="#F44336"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:transitionName="txt1_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image_help"
+        tools:ignore="MissingConstraints" />
+
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="168dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Remember me"
+        android:textColor="@color/primary"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpassword" />
+
+    <Button
+        android:id="@+id/Go_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roun_border"
+        android:onClick="Go"
+        android:text="@string/go"
+        android:textColor="#F40000"
+        android:transitionName="GO_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remember"
+        tools:ignore="MissingConstraints"
+        tools:targetApi="lollipop" />
+
+
+
+    <Button
+        android:id="@+id/new_user"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#00000000"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="Register"
+        android:text="New user? Sign Up"
+        android:textColor="#574C4C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Go_login"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:targetApi="lollipop" />
+
+
+    <EditText
+        android:id="@+id/txtuser"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginStart="30dp"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/start_blue"
+        android:hint="Email"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/roun_border"
+        android:drawableEnd="@drawable/user"
+        app:layout_constraintBottom_toTopOf="@+id/txtpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image_help"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/start_blue"
+        android:hint="password"
+        android:layout_marginBottom="326dp"
+        android:inputType="textPassword"
+        android:background="@drawable/roun_border"
+        android:drawableEnd="@drawable/password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtuser"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
